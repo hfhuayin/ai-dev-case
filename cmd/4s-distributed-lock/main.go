@@ -1,5 +1,7 @@
 // Package main 使用 Redis + Lua 脚本实现秒杀库存场景
 // 通过 Lua 保证「判断库存 + 扣减」的原子性，防止超卖
+//
+// 运行: go run ./cmd/4s-distributed-lock
 package main
 
 import (
